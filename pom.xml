@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ui-select</artifactId>
-    <version>0.16.1-SNAPSHOT</version>
+    <version>0.16.1</version>
     <name>ui-select</name>
     <description>WebJar for ui-select</description>
     <url>http://webjars.org</url>
@@ -37,7 +37,7 @@
         <developer>
             <id>eltomato</id>
             <name>Tommaso Previero</name>
-            <email></email>
+            <email />
         </developer>
     </developers>
 
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/ui-select</url>
         <connection>scm:git:https://github.com/webjars/ui-select.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ui-select.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ui-select-0.16.1</tag>
     </scm>
 
     <dependencies>
@@ -76,13 +76,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
