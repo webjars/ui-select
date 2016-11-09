@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>ui-select</artifactId>
-    <version>0.19.6-SNAPSHOT</version>
+    <version>0.19.6</version>
     <name>ui-select</name>
     <description>WebJar for ui-select</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/ui-select</url>
         <connection>scm:git:https://github.com/webjars/ui-select.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/ui-select.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>ui-select-0.19.6</tag>
     </scm>
 
     <dependencies>
